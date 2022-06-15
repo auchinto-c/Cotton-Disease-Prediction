@@ -1,7 +1,6 @@
 # Cotton-Disease-Prediction
 
 ## Introduction
-<hr>
 
 This project aims to classfiy images of cotton plant and cotton plant leaves into one of 4 categories:
 1. Diseased Cotton Plant
@@ -11,10 +10,9 @@ This project aims to classfiy images of cotton plant and cotton plant leaves int
 
 This is essentially a **Multi-category classification** problem. We are dealing with this objective using a pre-designed CNN architecture, ResNet50, made out of 50 layers. This architecture is available as part of Keras applications.
 
-<br><br>
+<br><hr>
 
 ## Credits
-<hr>
 
 |              | Details |
 |--------------|--------------------------------------------------------------------------------------------------------------------|
@@ -23,8 +21,9 @@ This is essentially a **Multi-category classification** problem. We are dealing 
 | **Dataset**  | [Drive - Collected by Akash Zade](https://drive.google.com/drive/folders/1vdr9CC9ChYVW2iXp6PlfyMOGD-4Um1ue)        |
 | **Dataset Owner**  | [LinkedIn - Akash Zade](https://www.linkedin.com/in/ai-engineer-az/)                                         |
 
-## Brief
 <hr>
+
+## Brief
 
 |                   | **Details**                  |
 |-------------------|------------------------------|
@@ -37,8 +36,9 @@ This is essentially a **Multi-category classification** problem. We are dealing 
 | **Epochs**        | 20                           |
 |                   |                              |
 
-## Procedure
 <hr>
+
+## Procedure
 
 1. **Model Initialisation** - Initialise ResNet50 architecture, which is a custom CNN with 50 layers
    - Image size in the dataset is (224, 224), and given that the images have 3 channels, RGB, we will consider the input layer as (224, 224, 3).
@@ -64,10 +64,10 @@ This is essentially a **Multi-category classification** problem. We are dealing 
    - Get the probabilities of each of the classes for each test image
    - Capture the class with the maximum probability for a given test image
 6. **Save the model**
-<br><br>
+
+<br><hr>
 
 ## Local Setup
-<hr>
 
 1. Clone the repository to your local system.
 2. Run the `cotton-price-prediction.ipynb` file on Jupyter notebook or Google Colab, to get the script of the model development and training.
@@ -78,10 +78,10 @@ This is essentially a **Multi-category classification** problem. We are dealing 
   - GPU Memory : 12GB / 16GB
   - No. of CPU Cores : 2
   - Available RAM : 12GB
-<br><br>
+
+<br><hr>
 
 ## Library and Tools
-<hr>
 
 ### Language
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -98,10 +98,9 @@ This is essentially a **Multi-category classification** problem. We are dealing 
 ### Development Tools
 ![google-colab](https://img.shields.io/badge/google-colab-%23e38330.svg?style=for-the-badge&logo=google-colab&logoColor=white)
 
-<br><br>
+<br><hr>
 
 ## Results
-<hr>
 
 ### Training Loss v/s Validation Loss
 | **Model** | **Training Loss** | **Validation Loss** |
@@ -121,10 +120,9 @@ We observe a steep rise in the Training accuracy through the beginning epochs, f
 
 ![img](https://github.com/auchinto-c/Cotton-Disease-Prediction/blob/main/Visualizations/accuracy_and_val_accuracy.png)
 
-<br><br>
+<br><hr>
 
 ## Future Scope
-<hr>
 
 With ResNet50, which has around 25.6M parameters, we are still at around `74.5%` Training accuracy with `20 epochs over 1951 training images`.
 1. We can explore the effects on accuracy if we increase the number of epochs over the given data set.
@@ -133,3 +131,5 @@ With ResNet50, which has around 25.6M parameters, we are still at around `74.5%`
 4. We can explore the effects on accuracy and training time, if we use an architecture with lesser number of parameters as that of ResNet50. For instance, `MobileNetV2 with 3.5M parameters`.
 5. The results of these investigations can be compared to provide insights on the trade-off between accuracy and training time.
 6. We can also explore solving this problem statement using a generic CNN, and observe the results in terms of accuracies and training time.
+
+<hr>
