@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project aims to classfiy images of cotton plant and cotton plant leaves into one of 4 categories:
+This project aims to classify images of cotton plant and cotton plant leaves into one of 4 categories:
 1. Diseased Cotton Plant
 2. Diseased Cotton Leaf
 3. Fresh Cotton Plant
